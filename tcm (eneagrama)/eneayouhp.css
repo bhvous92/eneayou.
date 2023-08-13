@@ -1,0 +1,127 @@
+* {
+    margin: 0 auto
+}
+
+span#you{
+    color:#213555;
+}
+
+
+header {
+    background-color: #f8f6f5;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div#eneatype {
+    width: 40%
+}
+
+a#eneayou {
+    font-size: 48px;
+    color: #4F709C;
+    font-family: 'Dela Gothic One', cursive;
+    margin-bottom:20;
+    text-decoration: none;
+}
+
+a#h3 {
+    font-size: 25px;
+    font-family: 'Fanwood Text', serif;
+    color: black;
+    opacity: 60%;
+    text-decoration: none;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #213555
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:#213555;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+main {
+    background-color: #ebe2dd;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+main h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 55px;
+    color: #6a4823;
+
+}
+
+main h3{
+    font-size: 25px;
+    font-family: 'Fanwood Text', serif;
+    color: black;
+    opacity: 60%;
+}
+
+div#text{
+    margin-top: 200px;
+    width: 40%
+}
+
+div img{
+    margin-top: 100px;
+    height: 500px
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        height: 210px;
+    }
+
+    a#eneayou{
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%
+    }
+
+    main h1{
+        font-size: 40px
+    }
+
+    main h3{
+        font-size: 25px
+    }
+
+    div#text{
+        margin-top: 80px;
+    }
+    
+    div img{
+        margin-top: 60px;
+    }
+}
